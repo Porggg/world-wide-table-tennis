@@ -6,7 +6,9 @@ import { StatusBar } from "expo-status-bar";
 import CustomButton from "@/components/CustomButton";
 import backImage from "@/assets/images/young-man-playing-table-tennis-black.jpg";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
 const App = () => {
+  const router = useRouter();
   return (
     <View className="flex-1">
       <ImageBackground source={backImage} resizeMode="cover" className="flex-1">
@@ -26,7 +28,7 @@ const App = () => {
 
             <View>
               <CustomButton
-                onPress={() => console.log("tap")}
+                onPress={() => router.push("/config")}
                 title="Get Started"
               />
             </View>
