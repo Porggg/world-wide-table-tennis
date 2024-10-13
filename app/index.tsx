@@ -27,7 +27,7 @@ const App = () => {
 
             <View>
               <CustomButton
-                onPress={() => router.push("/config")}
+                onPress={() => router.push("/events")}
                 title="Get Started"
               />
             </View>
